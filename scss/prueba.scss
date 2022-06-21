@@ -1,0 +1,24 @@
+/*IMPORTAR */ 
+
+@import "colores";
+@import "generales";
+@import "tipografia";
+@import "estructura";
+@import "grids";
+@import "clases";
+
+
+/* ANIDAMIENTO */
+
+img {
+    opacity: 1.0;
+    transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+    &:hover {
+        opacity: 0.6;
+        transition: opacity .55s ease-in-out;
+        -moz-transition: opacity .55s ease-in-out;
+        -webkit-transition: opacity
+    }
+}

@@ -1,0 +1,39 @@
+/*Class*/
+
+.centrar {
+    text-align: center;
+}
+
+.mensajeHeader {
+    background-color: white;
+    color: $negro;
+}
+
+.cursiva {
+    font-style: italic;
+}
+
+.derecha {
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: 20px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+.centralizar {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: min-content;
+    justify-content:space-around;
+}
+
+
+/*Animación y transiciones*/
+
+a.cambiarFuente:hover,
+
+a.cambiarFuente:active {
+    font-family: monospace;
+}
