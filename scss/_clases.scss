@@ -13,6 +13,53 @@
     font-style: italic;
 }
 
+/**EXTEND**/
+
+.cursivaDestacado {
+    @extend .cursiva;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/**INICIO MIXIN**/
+
+@mixin encabezados ($size, $color) {
+    color: $color;
+    font-size: $size;
+}
+
+h3 {
+    @include encabezados(30px,$negro);
+    background-color: $beige;
+    padding: 2vh;
+    margin: 0%;
+}
+
+h2 {
+    @include encabezados(35px,$negro);
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
+/**FIN MIXIN**/
+
+/**MAPS**/
+
+$colors: (
+    Instagram: #C13584,
+    Facebook: #125688,
+);
+
+.iconof {
+    background-color: map-get($colors, Facebook);
+    
+}
+
+.iconoi {
+    background-color: map-get($colors, Instagram);
+}
+
+/**FIN MAPS**/
+
 .derecha {
     display:flex;
     justify-content: flex-end;
